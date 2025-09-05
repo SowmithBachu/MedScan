@@ -32,7 +32,7 @@ const Messages = ({ messages, isLoading, data }: Props) => {
                     </span>
                   </div>
                   <div className="mt-2 text-xs text-blue-600 dark:text-blue-300">
-                    Query: "{item.query}"
+                    Query: &quot;{item.query}&quot;
                   </div>
                 </CardContent>
               </Card>
