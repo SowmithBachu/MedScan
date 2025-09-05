@@ -35,7 +35,7 @@ export async function GET() {
         return new Response(JSON.stringify({
             stats,
             queryWithoutNamespace: {
-                matches: queryResponse.matches.length,
+                matchCount: queryResponse.matches.length,
                 matches: queryResponse.matches.map(m => ({
                     id: m.id,
                     score: m.score,
@@ -43,7 +43,7 @@ export async function GET() {
                 }))
             },
             queryWithNamespace: {
-                matches: queryResponseWithNamespace.matches.length,
+                matchCount: queryResponseWithNamespace.matches.length,
                 matches: queryResponseWithNamespace.matches.map(m => ({
                     id: m.id,
                     score: m.score,
